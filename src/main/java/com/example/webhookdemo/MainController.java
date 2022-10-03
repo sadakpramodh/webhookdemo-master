@@ -166,7 +166,7 @@ public class MainController {
 //            console.log(qparams)
             System.out.println("=============="+qparams);
         }
-        return new ResponseEntity<Object>(qparams, HttpStatus.BAD_REQUEST);
+        return new ResponseEntity<Object>(qparams, HttpStatus.OK);
     }
     @GetMapping(path = {"/test1webhook"})
     public ResponseEntity<Object> gettestpost(@RequestParam(required=false) Map<String,String> qparams) {
