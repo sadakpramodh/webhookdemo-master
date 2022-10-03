@@ -164,7 +164,7 @@ public class MainController {
             return new ResponseEntity<Object>(request, HttpStatus.OK);
         } else {
 //            console.log(qparams)
-            System.out.println("=============="+qparams);
+            System.out.println("============="+qparams);
         }
         return new ResponseEntity<Object>(qparams, HttpStatus.OK);
     }
