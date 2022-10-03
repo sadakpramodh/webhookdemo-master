@@ -160,7 +160,7 @@ public class MainController {
         if (qparams.containsKey("hub.challenge")) {
 
             request = qparams.get("hub.challenge");
-//            request.warning(qparams);
+            System.out.println(request);
             return new ResponseEntity<Object>(request, HttpStatus.OK);
         } else {
 //            console.log(qparams)
